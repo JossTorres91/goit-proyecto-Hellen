@@ -1,0 +1,13 @@
+@import '../utils/variables.scss';
+.logo-empresa{
+    font-family: map-get($fuentes, raleway);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 2;
+    font-style: normal;
+    text-decoration: none;
+    color: map-get($colores,'azulclaro');
+    &:focus,&:hover{
+        color: map-get($colores , 'logoempresapuntero');
+    }
+}

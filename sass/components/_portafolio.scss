@@ -1,0 +1,205 @@
+@import'../utils/variables.scss';
+.filtro{
+    padding-bottom: 50px;
+}
+.btn__filtro{
+    color: map-get($colores,'textooscuro' );
+    font-family: map-get($fuentes,'roboto' );
+    background-color: map-get($colores,'grisicono' );
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    border: none;
+    border: 4px;
+    padding: 6px 24px;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover,&:focus{
+        color: map-get($colores,'blanco' );
+        background-color: map-get($colores,'azulclaro' );
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.portafolio{
+    &__contenido{
+        display: flex;
+    }
+    &__datos{
+        width: 370px;
+        height: 410.5px;
+        overflow: hidden;
+        border: 1px solid #eee;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        &:hover .portafolio__ventana{
+            transform: translateY(-298px);
+        }
+    }
+    &__descripcion{
+        height: 110px;
+        position: relative;
+        z-index: 2;
+        background-color: map-get($colores,'blanco' );
+        padding: 20px 24px;
+    }
+    &__titulo{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+    }
+    &__titulob{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 2;
+    }
+    &__categoria{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        color: map-get($colores,'textoclaro');
+    }
+    &__ventana{
+        width: 368px;
+        height: 294px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.55;
+        position: relative;
+        top: -110px;
+        z-index: 1;
+        background-color: map-get($colores,'azulventana');
+        padding: 63px 24px;
+        color: map-get($colores,'blanco');
+        transform: translateY(0px);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+@media screen and (min-width:1500px) {
+ .portafolio{
+        &__contenido {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__fila1{
+            margin: 30px 0;
+        }
+    }        
+}
+@media screen and (min-width:1200px) and (max-width:1499px) {
+    .portafolio{
+        &__contenido{
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 70px;
+        }
+        &__fila2{
+            margin: 30px 0;
+            &--tope{
+                margin-top: 30px;
+            }
+            &--fondo{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .portafolio{
+        &__contenido{
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+        }
+        &__datos,&__imagen,&__foto,&__ventana{
+            width: 354px;
+        }
+        &__fila2{
+            margin: 30px 0;
+        }
+    }
+}
+@media screen and(min-width:1130px) and (max-width:1199px) {
+    .portafolio{
+        &__fila1{
+            margin: 30px 0;
+        }
+    }
+}
+@media screen and(min-width:900px)and(max-width:1129px) {
+    .portafolio{
+        &__contenido{
+            padding: 0 70px;
+        }
+        &__fila1{
+            margin: 0;
+        }
+        &__fila2{
+            margin: 30px 0;
+            &--tope{
+                margin-top: 30px;
+            }
+            &--fondo{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and(min-width:768px)and(max-width:899px) {
+    .portafolio{
+        &__contenido{
+            padding: 0;
+        }
+        &__fila1{
+            margin: 0;
+        }
+        &__fila2{
+            margin: 30px 0;
+            &--tope{
+                margin-top: 30px;
+            }
+            &--fondo{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and(min-width:480px) and (max-width:767px){
+    .portafolio{
+        &__contenido{
+            flex-direction: column;
+        }
+        &__datos,&__foto,&__ventana,&__imagen{
+            width: 450px;
+        }
+        &__fila3{
+            margin-top: 30px;
+            &--fondo{
+                margin: 30px 0;
+            }
+        }
+    }
+}
+@media (max-width:479px){
+    .portafolio{
+        &__contenido{
+            flex-direction: column;
+        }
+        &__datos,&__foto,&__ventana,&__imagen{
+            width: 314px;
+        }
+        &__fila3{
+            margin-top: 30px;
+            &--fondo{
+                margin: 30px 0;
+            }
+        }
+    }
+}

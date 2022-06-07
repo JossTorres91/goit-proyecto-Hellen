@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <a href="index.html" class="logo-empresa">WebStudio</a>
+      <div class="encabezado__menu">
+        <div class="encabezado__cerrarmenu">
+          <button class="btn btn__cerrarmenu">
+            <svg class="encabezado__iconocerrar">
+              <use xlink:href="images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="encabezado__navegación">
+          <a href="index.html" class="encabezado__link">Estudio</a>
+          <a href="portfolio.html" class="encabezado__link">Portafolio</a>
+          <a href="contacts.html" class="encabezado__link--activo">Contactos</a>
+        </nav>
+        <div class="encabezado__contactos">
+          <a href="#" class="encabezado__email">
+            <svg class="encabezado__iconoemail">
+              <use xlink:href="images/icons.svg#icon-sobre"></use>
+            </svg>
+            <span class="encabezado__emailtexto">info@devstudio.com</span>
+          </a>
+          <a href="#" class="encabezado__telefono">
+            <svg class="encabezado__iconotelefono">
+              <use xlink:href="images/icons.svg#icon-telefono"></use>
+            </svg>
+            <span class="encabezado__telefonotexto">+52 55 5529 6000</span>
+          </a>
+        </div>
+        <div class="encabezado__redes">
+          <a href="#" class="encabezado__red"><span>Instagram</span></a>
+          <a href="#" class="encabezado__red"><span>Twitter</span></a>
+          <a href="#" class="encabezado__red"><span>Facebook</span></a>
+          <a href="#" class="encabezado__red"><span>Linkedin</span></a>
+        </div>
+      </div>
+      <div class="encabezado__iconomenu--contenedor">
+        <svg class="encabezado__iconomenu">
+          <use xlink:href="images/icons.svg#icon-menu"></use>
+        </svg>
+      </div>
+    </header>
+    <footer class="piepagina">
+      <address class="piepagina__directorio">
+        <a href="index.html" class="logo-empresa">WebStudio</a>
+        <p class="piepagina__dirección">
+          Calz. Ticomán 500, Ciudad de <br />
+          México, CDMX, México
+        </p>
+        <a href="#" class="piepagina__email">info@example.com</a>
+        <a href="#" class="piepagina__telefono">+52 55 5529 6000</a>
+      </address>
+      <div class="encuentrenos">
+        <span class="encuentrenos__titulo">ENCUENTRENOS EN</span>
+        <div class="encuentrenos__iconos">
+          <a href="#" class="encuentrenos__iconos--fondo">
+            <svg class="encuentrenos__instagram">
+              <use xlink:href="images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="encuentrenos__iconos--fondo">
+            <svg class="encuentrenos__twitter">
+              <use xlink:href="images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#" class="encuentrenos__iconos--fondo">
+            <svg class="encuentrenos__facebook">
+              <use xlink:href="images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="encuentrenos__iconos--fondo">
+            <svg class="encuentrenos__linkedin">
+              <use xlink:href="images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="suscripcion">
+        <form
+          name="formulario-suscripcion"
+          class="suscripcion__formulario"
+          autocomplete="off"
+        >
+          <label class="suscripcion__etiqueta" for="suscripcion__email"
+            >SUSCRÍBASE AL BOLETÍN INFORMATIVO</label
+          >
+          <input
+            type="email"
+            name="email-suscripción"
+            id="suscripcion__email"
+            placeholder="E-mail"
+            class="suscripcion__email"
+          />
+        </form>
+        <button type="submit" class="btn btn-suscripcion">
+          <span>Suscríbase</span>
+          <svg class="btn-suscripcion__icono">
+            <use xlink:href="images/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
