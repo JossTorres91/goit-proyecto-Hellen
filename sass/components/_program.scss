@@ -1,3 +1,14 @@
 .programa{
-    background-color: green;
+    background-color: none;
+    &__contenedor{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__titulo,&__descripciontexto,&__modulo{
+        text-align: center;
+    }
+    &__inscripcion{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
