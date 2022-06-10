@@ -1,0 +1,122 @@
+@import'../utils/variables.scss';
+.encabezado{
+    &__iconomenu{
+        display: none;
+        &--contendor{
+            display:none
+        }
+    }
+    &__iconoemail{
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+    }
+    &__iconotelefono{
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+    }
+}
+.encuentrenos{
+    &__instagram,&__twitter,&__facebook,&__linkedin{
+        width: 20px;
+        height: 20px;
+        fill:map-get($colores,'blanco' );
+    }
+}
+.btn-suscripcion{
+    &__icono{
+        width: 24px;
+        height: 24px;
+        fill: map-get($colores,'blanco' );
+    }
+}
+.caracteristicas{
+    &__icono-antena,&__icono-reloj,&__icono-diagrama,&__icono-astronauta{
+        width: 70px;
+        height: 70px;
+    }
+}
+.equipo{
+    &__instagram,&__twitter,&__facebook,&__linkedin{
+        width: 20px;
+        height: 20px;
+    }
+}
+.clientes{
+    &__logo01,&__logo02,&__logo03,&__logo04,&__logo05,&__logo06{
+        width: 106px;
+        height: 60px;
+        cursor: pointer;
+    }
+}
+.modal{
+    &__iconocerrar{
+        width: 11px;
+        height: 11px;
+        fill: #000;
+    }
+    &__iconopersona{
+        width: 12px;
+        height: 12px;
+        position: relative;
+        top: -26px;
+        left: 15px;
+    }
+    &__iconotelefono{
+        width: 13px;
+        height: 13px;
+        position: relative;
+        top: -26.5px;
+        left: 14.27px;
+    }
+    &__iconoemail{
+        width: 15px;
+        height: 12px;
+        position: relative;
+        top: -26px;
+        left: 13.5px;
+    }
+    &__iconocuadro{
+        width: 16px;
+        height: 15px;
+    }
+    &__iconochecar{
+        width: 11px;
+        height: 18px;
+        fill: map-get($colores,'blanco' );
+    }
+}
+
+@media screen and (max-width:767px){
+    .encabezado{
+        &__iconoemail,&__iconotelefono{
+            display: none;
+        }
+        &__iconocerrar{
+            width: 19px;
+            height: 19px;
+            fill: map-get($colores,'textooscuro' );
+            cursor: pointer;
+            &:hover{
+                fill: map-get($colores,'azulclaro' );
+            }
+        }
+        &__iconomenu{
+            display: flex;
+            width: 24px;
+            height: 16px;
+            &:hover{
+                fill: map-get($colores,'azulclaro' );
+                cursor: pointer;
+            }
+            &--contenedor{
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }    
+}
