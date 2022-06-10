@@ -1,0 +1,19 @@
+.problemas{
+    background-image: linear-gradient(to bottom,#010101e6,#00000033);
+    &__descripcion{
+        text-align: center;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 10px;
+        &item{
+            text-align: center;
+        }
+    }
+    &__titulo{
+        text-align: center;
+        color: white;
+    }
+}
