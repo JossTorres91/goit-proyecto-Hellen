@@ -1,2 +1,3 @@
-# goit-markup-hw-08
-Tarea 08 del curso Fullstack de GoIt, elaboración de pagina responsiva.
+# goit-proyecto-Hellen
+
+Proyecto 01 del curso Fullstack de GoIt, empresa de RRHH de nombre "Hellen"
