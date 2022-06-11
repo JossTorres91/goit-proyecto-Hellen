@@ -1,4 +1,10 @@
 @import'../utils/variables.scss';
+.problemas{
+    &__icono{
+        width: 200px;
+        height: 100px;
+    }
+}
 .encabezado{
     &__iconomenu{
         display: none;
