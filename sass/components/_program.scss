@@ -1,15 +1,43 @@
 .programa{
     background-color: none;
-    width: 100%;
+    width: 75%;
+    &__modulo01,&__modulo02,&__modulo03{
+        &tema{
+            &::before{
+                content: "";
+                background-image: url(../images/JavaScript.png);
+            }
+        }
+    }
     &__contenedor{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        padding: 20px 10px;
     }
     &__titulo{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
+    }
+    &__descripcion{
+        &texto{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.17;
+            color: #212121;
+            margin: 20px 0;
+        }
+    }
+    &__horario,&__precio{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.17;
+        color: #757575;
+    }
+    &__horario{
+        margin: 10px 0;
     }
     &__titulo,&__descripciontexto,&__modulo{
         text-align: center;
