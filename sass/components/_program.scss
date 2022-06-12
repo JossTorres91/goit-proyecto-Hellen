@@ -5,6 +5,12 @@
         display: flex;
         justify-content: space-between;
     }
+    &__titulo{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+    }
     &__titulo,&__descripciontexto,&__modulo{
         text-align: center;
     }
