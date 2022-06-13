@@ -1,5 +1,42 @@
 .wedo{
     width: 75%;
+    min-width: 320px;
+    &__descripcion{
+        width: 300px;
+        height: 200px;
+        background-color: #2196f3;
+        position: relative;
+        top: -216px;
+        padding: 31px 20px;
+        cursor: pointer;
+        &texto{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.55;
+            color: #fff;
+        }
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    &__imagen{
+        overflow: hidden;
+        width: 300px;
+        border: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    &__foto{
+        margin: 10px 0;
+        width: 300px;
+    }
     &__encabezado{
         text-align: center;
         font-weight: 700;
@@ -20,7 +57,16 @@
             -moz-border-radius: 2px;
             -ms-border-radius: 2px;
             -o-border-radius: 2px;
-}
+        }
+        &contenedor01{
+            padding: 0 98px;
+        }
+        &contenedor02{
+            padding: 0 112px;
+        }
+        &contenedor03{
+            padding: 0 102px;
+        }
     }
     &__grid{
         display: grid;
@@ -29,7 +75,47 @@
         gap: 10px;
         padding:10px;
         &item{
+            height: 266px;
+            &:hover {
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+            &:hover .wedo__descripcion{
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:1365px) {
+    .wedo{
+        &__grid{
+            grid-template-columns: auto auto;
+        }
+    }    
+}
+@media screen and (min-width:480px) and (max-width:767px) {
+    .wedo{
+        &__grid{
+            grid-template-columns: auto;
+        }
+    }    
+}
+@media screen and (min-width:0px) and (max-width:479px) {
+    .wedo{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        &__encabezado{
             text-align: center;
+        }
+        &__grid{
+            display: flex;
+            flex-direction: column;
         }
     }
 }

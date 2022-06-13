@@ -4,6 +4,7 @@
     background-size:contain;
     background-position: center;
     width: 75%;
+    min-width: 320px;
     &__descripcion{
         display: flex;
         justify-content: center;
@@ -78,4 +79,42 @@
         color: #242424;
     }
     border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width:768px) and (max-width:1365px) {
+    .problemas{
+        width: 100%;
+        &__grid{
+            gap: 10px;
+            padding: 10px;
+        &item{
+            padding: 0;
+            width: 320px;
+        }
+        }
+    }    
+}
+@media screen and (min-width:480px) and (max-width:767px) {
+    .problemas{
+        &__grid{
+            grid-template-columns: auto;
+            &item{
+                padding: 0;
+                width: 320px;
+            }
+        }
+    }
+}
+@media screen and (min-width:0px) and (max-width:479px){
+    .problemas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        &__grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 320px;
+        }
+    }
 }
