@@ -1,4 +1,7 @@
 @import'../utils/variables.scss';
+.tag-line{
+    background-color: #2F303A;
+}
 .encabezado{
     width: 100%;
     display: flex;
@@ -8,6 +11,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 1.17;
+        color: #fff;
     }
     &__cerrarmenu{
         display: none;
@@ -23,7 +27,7 @@
     }
     &__link{
         font-family: map-get($fuentes, 'roboto' );
-        color: map-get($colores, 'textooscuro' );
+        color: #fff;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.17;
@@ -58,7 +62,7 @@
     }
     &__email,&__telefono{
         font-family: map-get($fuentes,'roboto' );
-        color:map-get($colores,'textoclaro' );
+        color: #ffffff99;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.17;
@@ -66,6 +70,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
+        fill: #ffffff99;
         &:hover,&:focus{
             color: map-get($colores,'azulclaro' );
             fill: map-get($colores,'azulclaro' );
