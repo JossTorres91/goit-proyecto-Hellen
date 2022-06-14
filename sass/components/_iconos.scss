@@ -113,6 +113,7 @@
             display: flex;
             width: 24px;
             height: 16px;
+            fill: #ffffff99;
             &:hover{
                 fill: map-get($colores,'azulclaro' );
                 cursor: pointer;
