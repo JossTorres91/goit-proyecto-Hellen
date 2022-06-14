@@ -8,6 +8,7 @@ body{
     min-width: 320px;
     color: map-get($colores,'textooscuro');
     font-family: map-get($fuentes,'roboto');
+    counter-reset: pgt;
 }
 main{
     display: flex;
