@@ -1,5 +1,5 @@
 @import '../utils/variables.scss';
-.logo-empresa{
+.logo-empresa,.logo-empresa__header{
     font-family: map-get($fuentes, raleway);
     font-weight: 700;
     font-size: 26px;
@@ -10,4 +10,9 @@
     &:focus,&:hover{
         color: map-get($colores , 'logoempresapuntero');
     }
+}
+.logo-empresa__header--centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
